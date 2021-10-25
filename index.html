@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap"
-    rel="stylesheet">    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="sass/main.css">
+        <script src="https://kit.fontawesome.com/44409f3fe0.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
     <title>Ohmyfood</title>
 </head>
+
 <body>
-    
+    <header>
+        <div class="header__logo"><a href="index.html"><img src="images/logo/ohmyfood.png" alt="Logo de l'entreprise Ohmyfood"></a></div>
+    </header>
+    <section class="top">
+        <div class="top__input"><i class="fas fa-map-marker-alt"></i><input type="text" value="Paris, Belleville" readonly class="top__input__city"></div>
+        <div class="top__content">
+            <p class="top__content__big-title">Réservez le menu qui vous convient</p>
+            <p class="top__content__text regular-text">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+            <a href="#restaurants" class="top__content__button">Explorer nos restaurants</a>
+        </div>
+    </section>
 </body>
+
 </html>

@@ -1,1 +1,108 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body, input {
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  font-family: 'Shrikhand', cursive;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+}
+
+.top__input {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  background-color: #e4e4e7;
+}
+
+.top__input__city {
+  border: none;
+  font-size: 1em;
+  font-weight: 500;
+  padding: 1em 0;
+  background-color: #e4e4e7;
+  width: 110px;
+  text-overflow: ellipsis;
+}
+
+.top__input i {
+  margin-right: 1em;
+}
+
+.top__content {
+  padding: 2em;
+  text-align: center;
+  background-color: #f4f4f5;
+}
+
+.top__content__big-title {
+  font-size: 1.4em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.top__content__text {
+  text-align: center;
+  margin: 1em 0;
+}
+
+.top__content__button {
+  display: inline-block;
+  margin: 1em 0;
+  padding: 1em;
+  border-radius: 30px;
+  color: white;
+  background: linear-gradient(175deg, #FF79DA 0%, #9356DC 100%);
+  -webkit-box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
+}
+
+.top__content__button:hover {
+  background: linear-gradient(175deg, #ff93e1 0%, #a674e2 100%);
+  -webkit-box-shadow: 0 3px 12px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 3px 12px rgba(0, 0, 0, 0.6);
+}
+
+.header__logo {
+  padding: 1em 0;
+  -webkit-box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.header__logo img {
+  max-width: 150px;
+  display: block;
+}
+
+.header__logo i {
+  position: absolute;
+  font-size: 1.3rem;
+  left: 1em;
+  top: .9em;
+  color: #333333;
+}
+/*# sourceMappingURL=main.css.map */

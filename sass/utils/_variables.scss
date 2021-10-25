@@ -1,3 +1,13 @@
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
+
+$input-bg: #e4e4e7;
+$top-content-bg: #f4f4f5;
+$button-bg: linear-gradient(175deg, $secondary-color 0%, $primary-color 100%);
+
+$light-primary: lighten($primary-color, 7%);
+$light-secondary: lighten($secondary-color, 5%);
+$light-button-bg: linear-gradient(175deg, $light-secondary 0%, $light-primary 100%);
+
+$arrow-color: rgb(51, 51, 51);
