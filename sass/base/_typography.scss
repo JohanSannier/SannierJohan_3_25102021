@@ -2,8 +2,16 @@ body, input {
     font-family: 'Roboto', sans-serif;  
 }
 
-h2 {
+h1 {
     font-family: 'Shrikhand', cursive;
+    margin: .4em 0 1em;
+    font-size: 1.8em;
+}
+
+h2 {
+    font-weight:400;
+    text-transform: uppercase;
+    font-size: 1em;
 }
 
 a {

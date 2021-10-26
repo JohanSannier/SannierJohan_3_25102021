@@ -15,11 +15,19 @@ footer {
         li {
             line-height: 20px;
             margin-bottom: .5em;
+            }
         }
-    }
     
     & li a {
         color: white;
+        
+        &:hover {
+            text-decoration: underline white;
+            // background: linear-gradient(175deg, $secondary-color 0%, $primary-color 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            // color: transparent;
+        }
     }
     
     i {
@@ -27,9 +35,10 @@ footer {
         width: 13px;
         height: auto;
         transform: scale(.8);
+        margin-right: 4px;
 
         &.fa-handshake {
-            transform: rotate(-45deg) scale(.7);
+            transform: rotate(-45deg) scale(.6, .7);
         }
     }
 }

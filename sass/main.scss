@@ -1,7 +1,8 @@
 @import "utils/variables";
+@import "utils/mixins";
 @import "base/reset";
 @import "base/typography";
 @import "pages/home";
 @import "layouts/header";
 @import "layouts/footer";
-
+@import "layouts/main-content";

@@ -1,0 +1,6 @@
+@mixin heart-bg {
+    background: linear-gradient(175deg, #FF79DA 10%, #9356DC 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
