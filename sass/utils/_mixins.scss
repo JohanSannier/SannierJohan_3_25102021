@@ -4,3 +4,8 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+@mixin apparition ($delay) {
+    animation: apparition 1000ms ease-in-out $delay 1 both;
+}
+
