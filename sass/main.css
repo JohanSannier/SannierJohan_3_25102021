@@ -105,4 +105,42 @@ a {
   top: .9em;
   color: #333333;
 }
+
+footer {
+  background-color: #333333;
+  color: white;
+}
+
+footer p {
+  font-size: 1.3em;
+  padding: 1em;
+  font-family: "Shrikhand";
+}
+
+footer ul {
+  padding: 0 1em 1em;
+  list-style-type: none;
+}
+
+footer ul li {
+  line-height: 20px;
+  margin-bottom: .5em;
+}
+
+footer li a {
+  color: white;
+}
+
+footer i {
+  color: white;
+  width: 13px;
+  height: auto;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+footer i.fa-handshake {
+  -webkit-transform: rotate(-45deg) scale(0.7);
+          transform: rotate(-45deg) scale(0.7);
+}
 /*# sourceMappingURL=main.css.map */
