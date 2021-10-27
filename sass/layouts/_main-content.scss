@@ -38,7 +38,7 @@
     }
 }
 
-// Animation des coeur qui se remplit au survol
+// Animation du coeur qui se remplit au survol
 
     .box__card__text {
         &__icons {
@@ -49,6 +49,7 @@
         &__icons i {
             transition: opacity 300ms, transform 600ms;
             font-size: 28px;
+            width: 101%;
         }
 
         &__icons i.visible {
@@ -164,8 +165,9 @@
 
         i {
             color: white;
-            transform: translateX(10px);
+            transform: translateX(3em);
             transition: translate 300ms linear;
+            font-size: 1.3em;
         }
     }
 

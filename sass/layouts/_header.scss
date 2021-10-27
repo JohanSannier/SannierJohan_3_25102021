@@ -2,8 +2,8 @@
     padding: 1em 0 0.4em;
     position: relative;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
-    z-index: 1;
     text-align: center;
+    animation: header 0ms 2100ms forwards;
 
     img {
         max-width: 150px;
@@ -15,5 +15,15 @@
         left: 1em;
         top: .9em;
         color: $grey-color;
+    }
+}
+
+@keyframes header {
+    0% {
+        z-index: 0;
+    }
+
+    100% {
+        z-index: 1;
     }
 }
