@@ -290,6 +290,13 @@ footer i.fa-handshake {
 }
 
 .course {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -300,12 +307,6 @@ footer i.fa-handshake {
   margin-bottom: 1.4em;
 }
 
-@media screen and (min-width: 425px) {
-  .course h2 {
-    text-align: center;
-  }
-}
-
 .course h2::after {
   content: "";
   position: absolute;
@@ -314,14 +315,6 @@ footer i.fa-handshake {
   background-color: #99E2D0;
   bottom: -35%;
   left: 0;
-}
-
-@media screen and (min-width: 425px) {
-  .course h2::after {
-    left: 50%;
-    -webkit-transform: translate(-50%);
-            transform: translate(-50%);
-  }
 }
 
 .box__meal {

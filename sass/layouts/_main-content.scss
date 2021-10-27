@@ -86,13 +86,12 @@
 }
 
 .course {
+    display: flex;
+    flex-direction: column;
     flex: 1;
     h2 {
         position: relative;
         margin-bottom: 1.4em;
-        @include large-mobile-view {
-            text-align: center;
-        }
 
         &::after {
             content: "";
@@ -102,10 +101,6 @@
             background-color: $tertiary-color;
             bottom: -35%;
             left: 0;
-            @include large-mobile-view {
-                left: 50%;
-                transform: translate(-50%);
-            }
         }
     }
 }
