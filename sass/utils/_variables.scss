@@ -17,3 +17,9 @@ $breakpoints : (
     desktop: 990px,
     large-mobile: 425px
 );
+
+
+$size: 3vh;
+$num-bars: 5;
+$anim-dur: 1000ms;
+$anim-delay: $anim-dur / $num-bars;

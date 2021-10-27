@@ -188,33 +188,5 @@
         h3 {
             margin-bottom: .3em;
         }
-        
-        &__icons i {
-            transition: opacity 300ms, transform 600ms;
-            font-size: 22px;
-        }
-
-        &__icons i.visible {
-            position: absolute;
-            z-index: 2;
-        }
-
-        &__icons i.hidden {
-            position: relative;
-            transform: scale(0);
-            opacity: 0;
-            @include heart-bg();
-            transform-origin: 56%;
-        }
-
-        &__icons i.visible:hover + .hidden {
-            transform: scale(1);
-            opacity: 1;
-            width: 101%;
-        }
-
-        &__icons i.visible:hover {
-            @include heart-bg();
-        }
-    }
+}
 }

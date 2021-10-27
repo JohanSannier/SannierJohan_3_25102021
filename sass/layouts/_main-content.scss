@@ -48,12 +48,11 @@
 
         &__icons i {
             transition: opacity 300ms, transform 600ms;
-            font-size: 22px;
+            font-size: 28px;
         }
 
         &__icons i.visible {
             position: absolute;
-            z-index: 2;
         }
 
         &__icons i.hidden {
@@ -63,15 +62,16 @@
             @include heart-bg();
         }
         
-        &__icons i.visible:hover + .hidden {
-            transform: scale(1);
-            opacity: 1;
-            width: 101%;
-        }
-
-        &__icons i.visible:hover {
-            @include heart-bg();
-        }
+        &__icons:hover {
+            .hidden {
+                transform: scale(1);
+                opacity: 1;
+                transform-origin: center;
+                } 
+            .visible {
+                @include heart-bg();
+                }
+            }
     }
 
 .course-wrapper {

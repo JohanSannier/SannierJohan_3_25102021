@@ -1,0 +1,70 @@
+.container {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba($color: #fff, $alpha: 1);
+    z-index: 9;
+    animation: container 3000ms forwards;
+}
+
+.load {
+    width: $size * 10;
+    height: $size * 7.5;
+    display: flex;
+    justify-content: space-evenly;
+    &__bar {
+        background-color: $primary-color;
+        width: $size;
+        animation: bars $anim-dur backwards infinite ease-in-out alternate;
+        @for $i from 1 through 5 {
+            &--#{$i} {
+                animation-delay: $anim-delay * $i;
+            }
+            &--#{$i}--inv {
+                animation-delay: $anim-delay * $i;
+                animation-direction: alternate-reverse;
+                background-color: $secondary-color;
+            }
+        }
+    }
+}
+
+@keyframes bars {
+    0% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes container {
+    0% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 0;
+    }
+    
+    95% {
+        opacity: 0;
+    }
+
+    100% {
+        display: none;
+        opacity: 0;
+        z-index: -1;
+    }
+}
