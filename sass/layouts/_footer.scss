@@ -2,6 +2,12 @@ footer {
     background-color: $grey-color;
     color: white;
 
+    @include tablet-view {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
     p {
         font-size: 1.3em;
         padding: 1em;
@@ -11,6 +17,12 @@ footer {
     ul {
         padding: 0 1em 1em;
         list-style-type: none;
+        @include tablet-view {
+            display: flex;
+            justify-content: space-evenly;
+            width: 50%;
+            gap: 20px;
+        }
 
         li {
             line-height: 20px;

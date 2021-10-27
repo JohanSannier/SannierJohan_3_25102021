@@ -9,3 +9,20 @@
     animation: apparition 1000ms ease-in-out $delay 1 both;
 }
 
+@mixin tablet-view {
+    @media screen and (min-width: map-get($map: $breakpoints, $key: tablet)) {
+        @content;
+    }
+}
+
+@mixin desktop-view {
+    @media screen and (min-width: map-get($map: $breakpoints, $key: desktop)) {
+        @content;
+    }
+}
+
+@mixin large-mobile-view {
+    @media screen and (min-width: map-get($map: $breakpoints, $key: large-mobile)) {
+        @content;
+    }
+}

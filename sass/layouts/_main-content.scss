@@ -15,6 +15,11 @@
     margin-top: -30px;
     position: relative;
     background-color: $top-content-bg;
+    @include large-mobile-view {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     section {
         margin-bottom: 3em;
@@ -24,6 +29,12 @@
         display: flex;
         justify-content: space-between;
         align-items: baseline;
+
+        h1 {
+            @include large-mobile-view {
+                margin-right: 2em;
+            }
+        }
     }
 }
 
@@ -63,10 +74,24 @@
         }
     }
 
+.course-wrapper {
+    @include desktop-view {
+        width: 100%;
+        display: flex;
+        gap: 80px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
 .course {
+    
     h2 {
         position: relative;
         margin-bottom: 1.4em;
+        @include large-mobile-view {
+            text-align: center;
+        }
 
         &::after {
             content: "";
@@ -76,6 +101,10 @@
             background-color: $tertiary-color;
             bottom: -35%;
             left: 0;
+            @include large-mobile-view {
+                left: 50%;
+                transform: translate(-50%);
+            }
         }
     }
 }
@@ -90,7 +119,6 @@
     height: 70px;
     margin-bottom: 1em;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
-
 
     &__content {
         display: flex;
@@ -125,7 +153,6 @@
     }
 
     &__check {
-        width: 0;
         background-color: #99E2D0;
         display: flex;
         justify-content: center;
@@ -133,6 +160,7 @@
         height: 100%;
         cursor: pointer;
         transition: flex 300ms ease-out;
+        transform: translateX(40px);
 
         i {
             color: white;
@@ -145,10 +173,10 @@
         .box__meal__check {
             width: initial;
             flex: .3;
+            transform: translateX(0);
 
             & i {
                 animation: turnaround 400ms ease-in-out 1 forwards;
-                transform: translateX(0);
             }
         }
     }
@@ -190,6 +218,6 @@
 
     100% {
         opacity: 1;
-        transform: translateY(initial);
+        transform: translateY(0);
     }
 }

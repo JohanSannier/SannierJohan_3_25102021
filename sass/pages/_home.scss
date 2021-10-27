@@ -61,8 +61,16 @@
     margin: 2em 1em 0;
 }
 
+
 .bullet-list {
     margin-top: 2em;
+
+    @include tablet-view {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 
     &__content {
         background-color: $top-content-bg;
@@ -76,6 +84,10 @@
         font-size: 1.1em;
         font-weight: 500;
         box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
+        @include tablet-view {
+            width: 25%;
+            max-width: 300px;
+        }
 
         &:hover {
             color: $primary-color;
@@ -95,8 +107,6 @@
         .numbers {
             content: '';
             position: absolute;
-            display: grid;
-            place-items: center;
             color: white;
             left: 0;
             background-color: $primary-color;
@@ -122,11 +132,23 @@
     }
 }
 
+.box__card--wrapper {
+    @include tablet-view {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-around;
+    }
+}
+
 .box__card {
     border-radius: 15px;
     background-color: white;
     box-shadow: 0px 2px 5px 0px #0000007a;
     margin-bottom: 1.3em;
+        @include tablet-view {
+        width: 46%;
+    }
     
     &:hover {
         box-shadow: 0px 2px 10px 1px rgb(0, 0, 0 / 9%);
