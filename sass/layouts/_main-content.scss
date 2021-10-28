@@ -77,11 +77,15 @@
 
 .course-wrapper {
     @include desktop-view {
-        width: 100%;
+        width: 90%;
         display: flex;
-        gap: 80px;
+        gap: 20px;
         flex-wrap: wrap;
         justify-content: center;
+    }
+    @include large-desktop-view {
+        width: initial;
+        gap: 80px;
     }
 }
 

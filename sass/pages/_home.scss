@@ -56,11 +56,9 @@
 
 // Fonctionnement
 
-
 .process, .restaurant-wrapper {
     margin: 2em 1em 0;
 }
-
 
 .bullet-list {
     margin-top: 2em;
@@ -70,6 +68,11 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
+    }
+
+    @include large-desktop-view {
+        justify-content: center;
+        gap: 80px;
     }
 
     &__content {
@@ -116,7 +119,6 @@
             }
         }
     }
-
 
 // Restaurants
 

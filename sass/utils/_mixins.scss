@@ -26,3 +26,9 @@
         @content;
     }
 }
+
+@mixin large-desktop-view {
+    @media screen and (min-width: map-get($map: $breakpoints, $key: large-desktop)) {
+        @content;
+    }
+}
